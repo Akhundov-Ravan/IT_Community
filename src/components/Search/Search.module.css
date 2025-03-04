@@ -196,3 +196,9 @@
   font-size: 13px;
   padding-bottom: 12px;
 }
+
+.subject_width {
+ min-width: 200px;
+ margin-right: 12px;
+ text-align: left;
+}

@@ -1,54 +1,36 @@
-import React, { useState } from 'react';
-import styles from './Blog.module.css';
+import { useState } from "react";
+import styles from './Blog.module.css'
 
 const Blog = () => {
-  const [formData, setFormData] = useState({ title: '', description: '' }); 
-  const [submittedEntries, setSubmittedEntries] = useState([]); 
+  const options = ["Front-End", "Back-End", "Cybersecurity"];
 
-  const handleChange = (e) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      [e.target.name]: e.target.value, 
-    }));
+  const [selectedOption, setSelectedOption] = useState("");
+
+  // Handle the change in the first select
+  const handleFirstSelect = (event) => {
+    setSelectedOption(event.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (formData.title.trim() && formData.description.trim()) {
-      setSubmittedEntries((prevEntries) => [...prevEntries, formData]); 
-      setFormData({ title: '', description: '' }); //
-    }
-  };
-
-  return (
+   return (
     <div className={styles.container}>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="text" 
-          name="title" 
-          value={formData.title} 
-          onChange={handleChange} 
-          placeholder="Enter title"
-        />
-        <input 
-          type="text" 
-          name="description" 
-          value={formData.description} 
-          onChange={handleChange} 
-          placeholder="Enter description"
-        />
-        <button type="submit">Submit</button>
-      </form>
-
-      <div className={styles.cardsContainer}>
-        {submittedEntries.map((entry, index) => (
-          <div key={index} className={styles.card}>
-            <p><strong>{entry.title}</strong></p>
-            <p>{entry.description}</p>
-          </div>
+   <select onChange={handleFirstSelect} className="border p-2 rounded">
+        <option value="">Select a category</option>
+        {options.map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
         ))}
-      </div>
-    </div>
+      </select>
+
+      <select className="border p-2 rounded ml-2">
+        <option value="">Select an option</option>
+        {options.map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+   </div>
   );
 };
 

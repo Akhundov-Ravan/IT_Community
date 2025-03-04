@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import styles from "./Add.module.css";
 import specialists from "../../assets/fon.jpg";
 import Button from "../Button/Button";
-import Anket from "../Anket/Anket";
+import Anket from "../Search/Search";
 
 const Add = ({ onAddProfile }) => {
   const [showForm, setShowForm] = useState(false);
