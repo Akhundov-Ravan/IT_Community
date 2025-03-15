@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  background:  radial-gradient(circle at 5% 0%, rgba(216,239,85,0.2) 15%, transparent 35%), radial-gradient(circle at 0% 0%, rgba(144,222,251,0.32) 9%, transparent 16%), radial-gradient(circle at 100% 50%, rgba(216,239,85,0.25) 5%, transparent 30%), radial-gradient(circle at 100% 50%, rgba(144,222,251,0.25) 8%, transparent 20%), radial-gradient(circle at 5% 81%, rgba(216,239,85,0.13) 11%, transparent 24%), radial-gradient(circle at 0% 84%, rgba(144,222,251,0.4) 2.5%, transparent 14%);
+}
+
+.container {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: x-large;
+  text-align: center;
+  color: #034c52;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555;
+  font-weight: bold;
+}
+
+.container input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+input[type='radio'] {
+  display: inline;
+  width: 10%;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  width: 98%;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.formButton {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  width: 26%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.formButton:hover {
+  background-color: #d6e9eb;
+  color: black;
+}
+
+textarea {
+  padding: 10px;
+}

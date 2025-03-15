@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/IT_Community/static/css/main.4ad2304a.css",
+    "main.js": "/IT_Community/static/js/main.fa39a32a.js",
+    "static/media/hologram.mp4": "/IT_Community/static/media/hologram.58fd37023f265d7c4c14.mp4",
+    "static/media/fon.jpg": "/IT_Community/static/media/fon.9ad32f82aa62d9cb5981.jpg",
+    "static/media/Logo.jpg": "/IT_Community/static/media/Logo.63de4270b586c8b3eae6.jpg",
+    "static/media/email.png": "/IT_Community/static/media/email.596fac56b80d82a34182.png",
+    "index.html": "/IT_Community/index.html",
+    "main.4ad2304a.css.map": "/IT_Community/static/css/main.4ad2304a.css.map",
+    "main.fa39a32a.js.map": "/IT_Community/static/js/main.fa39a32a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ad2304a.css",
+    "static/js/main.fa39a32a.js"
+  ]
+}

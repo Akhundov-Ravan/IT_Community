@@ -1,0 +1,48 @@
+footer {
+  height: 12vh;
+  width: 100%;
+  background-color: #113449;
+  display: flex;
+  align-items: center;
+  padding: 4px 5%;
+}
+
+footer .logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo div:first-child {
+  color: white;
+  font-size: 30px;
+}
+
+footer .logo img {
+  width: 70px;
+  border-radius: 20%;
+  padding-top: 4px;
+}
+
+.logo p {
+  color: white;
+} 
+
+.logo .contacts {
+  padding-top: 18px;
+}
+
+.logo .contacts img {
+  width: 40px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.logo span {
+  color: aquamarine
+}
+
+.logo div:first-child:hover, .logo p:hover {
+  color: rgb(227, 233, 146);
+}

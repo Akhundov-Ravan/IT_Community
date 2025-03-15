@@ -1,0 +1,51 @@
+.smoothButton {
+  position: relative;
+  height: 50px;
+  width: 160px;
+  border: 1px solid gray;
+  color: black; 
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 660;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px #0c717a;
+  z-index: 0;  
+  transition: .3s ease;
+}
+
+.smoothButton:hover {
+  color: white;
+  transform: translateY(-12%);
+}
+
+.smoothButton::before,
+.smoothButton::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.smoothButton::before {
+  left: 0;
+  background-color: #0c717a; 
+  transform: translateX(-100%);
+}
+
+.smoothButton::after {
+  right: 0;
+  background-color: #0c717a; 
+  transform: translateX(100%);
+}
+
+.smoothButton:hover::before {
+  transform: translateX(0);
+}
+
+.smoothButton:hover::after {
+  transform: translateX(0);
+}

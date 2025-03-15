@@ -1,0 +1,125 @@
+.vdContainer {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  left: 50%;
+  top: 82%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  gap: 20px;
+}
+
+.container h1 {
+  font-size: 22px;
+}
+
+.container h1 {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 16px;
+  position: relative;
+  width: fit-content;
+  color: transparent;
+}
+
+.container h1:nth-child(1) {
+  animation: flag_white .3s ease forwards;
+  animation-delay: 3.5s;
+}
+
+.container h1:nth-child(2) {
+  animation: flag_yellow .3s ease forwards;
+  animation-delay: 4.5s;
+  font-size: 26px;
+}
+
+.container h1:nth-child(3) {
+  animation: flag_white .3s ease forwards;
+  animation-delay: 5.5s;
+}
+
+.container h1:nth-child(1) span {
+  animation-delay: 3s;
+}
+
+.container h1:nth-child(2) span {
+  animation-delay: 4s;
+}
+
+.container h1:nth-child(3) span {
+  animation-delay: 5s;
+}
+
+.container h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  animation: flag 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.container h1:nth-child(1) span {
+  background-color: rgb(68, 173, 243);
+}
+
+.container h1:nth-child(2) span {
+  background-color: red;
+}
+
+.container h1:nth-child(3) span {
+  background-color: rgb(64, 145, 64);
+}
+
+.container div {
+  border-radius: 20px;
+  padding-left: 16px;
+  text-align: center;
+  background: transparent;
+  animation: flag_title 1s ease forwards;
+  animation-delay: 4s;
+}
+
+@keyframes flag {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes flag_white {
+  100% {
+    color: #fffcf5;
+  }
+}
+
+@keyframes flag_yellow {
+  100% {
+    color: #79c2f0;
+
+  }
+}
+
+@keyframes scale {
+  100% {
+    font-size: 24px;
+  }
+}
